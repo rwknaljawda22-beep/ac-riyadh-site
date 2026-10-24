@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://ac-riyadh-site.riyadhac.workers.dev/sitemap.xml
