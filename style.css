@@ -9,3 +9,21 @@ footer{padding:26px 5%;background:#f8fbfd;display:flex;align-items:center;justif
 /* Keyboard accessibility and reduced-motion support */
 a:focus-visible{outline:3px solid var(--gold);outline-offset:3px;border-radius:4px}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important;scroll-behavior:auto!important}}
+
+/* Local coverage section */
+.coverage-section{background:#f5fbfe}
+.coverage-content{max-width:900px;margin:0 auto;text-align:center}
+.coverage-content>p{color:var(--muted);font-size:14px}
+.coverage-content ul{list-style:none;padding:0;margin:22px 0;display:flex;flex-wrap:wrap;justify-content:center;gap:9px}
+.coverage-content li{padding:6px 13px;border:1px solid #cfe8f4;border-radius:999px;background:#fff;color:var(--navy);font-size:13px;font-weight:700}
+.coverage-content .coverage-note{font-size:12px}
+.coverage-content>.btn{margin-top:8px}
+/* Make the existing site-wide floating WhatsApp action unmistakable and easy to tap */
+.floating-actions{left:max(15px,env(safe-area-inset-left));bottom:max(19px,env(safe-area-inset-bottom))}
+.floating-actions .float-wa{width:auto;min-width:48px;padding:0 15px;display:flex;gap:8px;border-radius:999px;font-size:0;white-space:nowrap}
+.floating-actions .float-wa::before{content:"◉";font-size:22px;line-height:1}
+.floating-actions .float-wa::after{content:"واتساب";font-size:13px;font-family:'Cairo',Tahoma,Arial,sans-serif;font-weight:800}
+.floating-actions a{min-height:48px;min-width:48px}
+@media(max-width:560px){.coverage-content li{font-size:12px;padding:6px 11px}.floating-actions{left:max(12px,env(safe-area-inset-left));bottom:max(14px,env(safe-area-inset-bottom))}}
+/* Defer rendering work for below-the-fold sections where supported */
+@supports (content-visibility:auto){main>.section,main>.warranty-band,main>.contact-strip{content-visibility:auto;contain-intrinsic-size:auto 560px}}
