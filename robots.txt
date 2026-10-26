@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://ac-riyadh-site.riyadhac.workers.dev/sitemap.xml
+Sitemap: https://ac-riyadh.riyadhac.workers.dev/sitemap.xml
