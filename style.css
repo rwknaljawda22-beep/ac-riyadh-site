@@ -28,111 +28,44 @@ a:focus-visible{outline:3px solid var(--gold);outline-offset:3px;border-radius:4
 /* Defer rendering work for below-the-fold sections where supported */
 @supports (content-visibility:auto){main>.section,main>.warranty-band,main>.contact-strip{content-visibility:auto;contain-intrinsic-size:auto 560px}}
 
-/* Dark navy theme and clear blue price badges */
-:root{--navy:#071321;--blue:#168bff;--blue2:#39b6ff;--ice:#10283e;--ink:#edf6ff;--muted:#b4c5d6;--gold:#ff5b62;--line:#263b50;--white:#101e2e}
-body{background:#071321;color:#edf6ff}.topline{background:#030a12;color:#eaf5ff}.site-header{background:#0b1929;box-shadow:0 4px 22px #0006;border-bottom:1px solid #20364b}.brand,.header-call{color:#f3f8ff}.brand small,.header-call span,.site-header nav a:hover,.site-header nav a.current{color:#39b6ff}.header-call{border-color:#2b455e}
-.hero{background:radial-gradient(ellipse at 90% 15%,#123858 0,transparent 38%),linear-gradient(115deg,#081522,#0c1d30 58%,#071321)}
-.hero h1,.page-hero h1,.section-heading h2,.about-content h2,.contact-info h2{color:#f5f9ff}.hero-copy>p,.page-hero p,.section-heading p,.service-card p,.contact-strip p{color:#c0cede}.hero-points{color:#b9d7ee}.btn.secondary{background:#13273b;border:1px solid #31516c;color:#f2f8ff}
-.service-card,.contact-info,.about-content,.coverage-content,.faq-item,.price-card,.feature-card{background:#0e2032;color:#edf6ff;border-color:#29445d;box-shadow:0 12px 30px #0003}.service-card h3,.coverage-content strong{color:#f4f8ff}.service-icon{background:#102f4a;color:#4dbbff}.service-card:hover{border-color:#168bff}
-.warranty-band{background:linear-gradient(115deg,#071321,#12395b);border-top:1px solid #254763;border-bottom:1px solid #254763}.contact-strip{background:#10243a;color:#f5f9ff}.contact-strip h2{color:#f5f9ff}footer,.site-footer{background:#030a12;color:#c8d8e8}footer a,.site-footer a{color:#53baff}input,textarea,select{background:#0a1928;color:#fff;border-color:#35516a}
-.price-highlight,.service-price,.price,.price-tag,.price strong{display:inline-block;color:#fff;background:linear-gradient(120deg,#0878e8,#0756a8);border:1px solid #50b8ff;border-radius:12px;padding:4px 13px;font-size:1.35em;font-weight:900;line-height:1.6;box-shadow:0 5px 18px #007bff35}.price-highlight{font-size:1.55em;padding:5px 15px;margin:5px 0}
-@media(max-width:700px){.site-header{gap:10px;flex-wrap:wrap}.site-header nav{order:3;width:100%;justify-content:center;gap:18px}.hero{padding:42px 5%;gap:25px}.service-card{padding:19px 16px}.price-highlight{font-size:1.4em}}
 
-/* Strict palette: black background, blue icons, red prices */
-:root{--blue:#168bff;--blue2:#168bff;--ice:#102b43;--gold:#168bff;--line:#263746;--navy:#f2f5f8;--ink:#f2f5f8;--muted:#c7d0d9}
-html,body,.topline,.site-header,footer,.site-footer,.hero,.page-hero,.section,.contact-section,.contact-strip,.service-card,.contact-info,.about-content,.coverage-content,.faq-item,.price-card,.feature-card{background:#050505!important;color:#f2f5f8!important}
-.site-header{border-bottom:1px solid #202a34;box-shadow:none!important}
-.brand,.brand b,.hero h1,.page-hero h1,.section-heading h2,.warranty-copy h2,.contact-strip h2,.about-content h2,.contact-info h2,.service-card h3{color:#f2f5f8!important}
-.brand small,.eyebrow,.site-header nav a:hover,.site-header nav a.current,.header-call span,.service-icon,.service-card>a,footer a,.site-footer a{color:#168bff!important}
-.hero-art,.page-art,.warranty-band,.contact-visual{background:#050505!important;border:1px solid #168bff}
+/* Unified site palette and accessible contact actions */
+:root{--navy:#050505;--blue:#168bff;--blue2:#168bff;--ice:#0b1c2a;--ink:#168bff;--muted:#c7d0d9;--gold:#ff3030;--line:#263746;--white:#050505}
+html,body{background:#050505!important;color:#168bff!important}
+body{color:#168bff}
+.topline,footer,.site-footer{background:#050505!important;color:#168bff!important}
+.site-header,.hero,.page-hero,.section,.contact-section,.contact-strip,.service-card,.contact-info,.about-content,.coverage-content,.faq-item,.price-card,.feature-card,.coverage-section{background:#050505!important;color:#168bff!important}
+.brand,.brand b,.hero h1,.page-hero h1,.section-heading h2,.contact-strip h2,.about-content h2,.contact-info h2,.service-card h3,.coverage-content strong,.warranty-copy h2{color:#168bff!important}
+.brand small,.eyebrow,.site-header nav a,.site-header nav a:hover,.site-header nav a.current,.service-icon,.service-card>a,footer a,.site-footer a{color:#168bff!important}
+.hero-copy>p,.page-hero p,.section-heading p,.service-card p,.about-content p,.contact-info>p,.contact-strip p,.warranty-copy p{color:#c7d0d9!important}
+.hero-art,.page-art,.warranty-band,.contact-visual{background:#050505!important;border:1px solid #263746}
 .service-card,.contact-card,.about-points>div{border-color:#263746!important;box-shadow:none!important}
-.service-icon{background:#0b1c2a!important;color:#168bff!important}
-.service-card p,.hero-copy>p,.page-hero p,.section-heading p,.about-content p,.contact-info>p,.contact-strip p,.warranty-copy p{color:#c7d0d9!important}
-.btn.primary{background:#168bff!important;color:#fff!important}.btn.secondary{background:#050505!important;border:1px solid #168bff!important;color:#f2f5f8!important}
-.float-call,.float-wa{background:#168bff!important}
-.price-highlight,.service-price,.price,.price-tag,.price strong{display:block;width:max-content;max-width:100%;color:#ff3030!important;background:transparent!important;border:0!important;border-radius:0!important;padding:0!important;margin:0 auto 12px!important;font-size:clamp(28px,3.4vw,38px)!important;font-weight:900!important;line-height:1.25!important;box-shadow:none!important;text-align:center}
-.service-card h3{text-align:center}
-@media(max-width:560px){.price-highlight,.service-price,.price,.price-tag,.price strong{font-size:30px!important}}
-
-/* Requested final palette: all lettering blue, prices red, black background; make neighborhoods clearly visible */
-html,body,body *{color:#168bff!important}
-html,body,.topline,.site-header,footer,.site-footer,.hero,.page-hero,.section,.contact-section,.contact-strip,.service-card,.contact-info,.about-content,.coverage-content,.faq-item,.price-card,.feature-card{background-color:#050505!important}
-.service-price-label,.price-highlight,.service-price,.price,.price-tag,.price strong,.price-highlight *,.service-price *{color:#ff3030!important}
+.service-icon{background:#0b1c2a!important}
+.service-price-label,.price-highlight,.service-price,.price,.price-tag,.price strong{color:#ff3030!important}
 .service-price-label{display:block;text-align:center;font-size:clamp(28px,3.5vw,38px);font-weight:900;line-height:1.25;margin:5px auto 10px}
-.service-card h3{color:#168bff!important}
-.coverage-section{display:block!important;visibility:visible!important;content-visibility:visible!important;background:#050505!important}
-.coverage-content{display:block!important;visibility:visible!important;opacity:1!important;max-width:1000px!important}
-.coverage-content ul{display:flex!important;visibility:visible!important;opacity:1!important;flex-wrap:wrap!important;justify-content:center!important;gap:10px!important;padding:0!important}
-.coverage-content li{display:block!important;visibility:visible!important;opacity:1!important;background:#050505!important;color:#168bff!important;border:1px solid #168bff!important;padding:8px 14px!important;border-radius:8px!important;font-size:15px!important;font-weight:800!important}
-.coverage-content .coverage-note{color:#168bff!important}
-.btn.primary,.btn.white{color:#168bff!important;background:#050505!important;border:1px solid #168bff!important}
-
-/* Make every phone number and WhatsApp action red throughout the site */
-a[href^="tel:"],
-a[href^="tel:"] *,
-.header-call,
-.header-call *,
-.strip-number,
-.strip-number *,
-.art-sticker,
-.art-sticker *,
-a[href*="wa.me"],
-a[href*="wa.me"] *,
-a[href*="whatsapp"],
-a[href*="whatsapp"] *,
-.float-wa,
-.float-wa *,
-button[aria-label*="واتساب"],
-button[aria-label*="WhatsApp"] {
-  color: #ff3030 !important;
-}
-a[href*="wa.me"],
-a[href*="whatsapp"],
-.float-wa {
-  border-color: #ff3030 !important;
-}
-
-/* Fix WhatsApp label: it is generated by ::after, so descendant selectors cannot color it */
-.floating-actions .float-wa::before,
-.floating-actions .float-wa::after {
-  color: #ff3030 !important;
-}
-
-
-/* FINAL CONSISTENT OVERRIDES — black background, blue text, red prices and experience */
-html, body { background:#050505 !important; color:#168bff !important; }
-body * { color:#168bff !important; }
-html, body, .topline, .site-header, footer, .site-footer, .hero, .page-hero, .section,
-.contact-section, .contact-strip, .service-card, .contact-info, .about-content,
-.coverage-content, .faq-item, .price-card, .feature-card, .contact-visual,
-.hero-art, .page-art, .warranty-band { background-color:#050505 !important; }
-.brand, .brand b, .hero h1, .page-hero h1, .section-heading h2, .contact-strip h2,
-.about-content h2, .contact-info h2, .service-card h3, .warranty-copy h2 { color:#168bff !important; }
-.service-price-label, .price-highlight, .service-price, .price, .price-tag,
-.price strong, .price-highlight *, .service-price * { color:#ff3030 !important; }
-.warranty-copy > span, .warranty-copy h2 { color:#ff3030 !important; }
-a[href^="tel:"], a[href^="tel:"] *, .header-call, .header-call *,
-.strip-number, .strip-number *, .art-sticker, .art-sticker *,
-a[href*="wa.me"], a[href*="wa.me"] *, a[href*="whatsapp"],
-a[href*="whatsapp"] *, .float-wa, .float-wa::before, .float-wa::after,
-button[aria-label*="واتساب"], button[aria-label*="WhatsApp"] { color:#ff3030 !important; }
-.btn.primary, .btn.white { background:#050505 !important; color:#168bff !important; border:1px solid #168bff !important; }
-.btn.whatsapp { background:#050505 !important; color:#ff3030 !important; border:1px solid #ff3030 !important; }
-.floating-actions { z-index:99999 !important; pointer-events:none !important; }
-.floating-actions a { position:relative !important; z-index:100000 !important; pointer-events:auto !important; cursor:pointer !important; touch-action:manipulation !important; }
-.floating-actions .float-call, .floating-actions .float-wa { min-width:58px !important; min-height:58px !important; display:flex !important; align-items:center !important; justify-content:center !important; border:2px solid #168bff !important; background:#050505 !important; box-shadow:0 4px 16px #0009 !important; }
-.floating-actions .float-call { font-size:26px !important; color:#168bff !important; }
-.floating-actions .float-wa { color:#ff3030 !important; border-color:#ff3030 !important; }
-.floating-actions .float-wa::before, .floating-actions .float-wa::after { color:#ff3030 !important; }
-.contact-buttons a, .contact-number a, .header-call, .hero-actions a, .art-sticker, .strip-number { position:relative; z-index:2; pointer-events:auto; cursor:pointer; touch-action:manipulation; }
-
-
-/* Contact page readability and working visual contact actions */
-.contact-note{font-size:clamp(18px,2.2vw,23px)!important;line-height:1.9!important;padding:18px 20px!important;margin-top:22px!important;border-right:4px solid #168bff!important;background:#0b0b0b!important;color:#168bff!important}
-.contact-visual .phone-circle{display:flex;align-items:center;justify-content:center;text-decoration:none!important;cursor:pointer!important;pointer-events:auto!important}
+.warranty-copy>span,.warranty-copy h2{color:#ff3030!important}
+a[href^="tel:"],a[href^="tel:"] *,a[href*="wa.me"],a[href*="wa.me"] *,a[href*="whatsapp"],a[href*="whatsapp"] *, .header-call,.header-call *, .strip-number,.strip-number *, .art-sticker,.art-sticker *, .float-wa,.float-wa::before,.float-wa::after{color:#ff3030!important}
+.btn.primary,.btn.white{background:#050505!important;color:#168bff!important;border:1px solid #168bff!important}
+.btn.secondary{background:#050505!important;border:1px solid #168bff!important;color:#168bff!important}
+.btn.whatsapp{background:#050505!important;color:#ff3030!important;border:1px solid #ff3030!important}
+.floating-actions{position:fixed;z-index:99999;pointer-events:none;left:max(12px,env(safe-area-inset-left));bottom:max(14px,env(safe-area-inset-bottom));display:flex;gap:10px}
+.floating-actions a{position:relative;z-index:100000;pointer-events:auto;cursor:pointer;touch-action:manipulation;min-width:58px;min-height:58px;display:flex;align-items:center;justify-content:center;text-decoration:none;border:2px solid #168bff;background:#050505!important;border-radius:999px;box-shadow:0 4px 16px #0009}
+.floating-actions .float-call{font-size:26px;color:#168bff!important}
+.floating-actions .float-wa{color:#ff3030!important;border-color:#ff3030!important;padding:0 15px;gap:8px;font-size:0;white-space:nowrap}
+.floating-actions .float-wa::before{content:"◉";font-size:22px;line-height:1}
+.floating-actions .float-wa::after{content:"واتساب";font-size:13px;font-family:'Cairo',Tahoma,Arial,sans-serif;font-weight:800}
+.contact-note{font-size:clamp(18px,2.2vw,23px)!important;line-height:1.9!important;padding:18px 20px!important;margin-top:22px!important;border-right:4px solid #168bff!important;background:#050505!important;color:#168bff!important}
+.contact-visual .phone-circle{display:flex;align-items:center;justify-content:center;text-decoration:none!important;cursor:pointer!important;pointer-events:auto!important;color:#168bff!important}
 .contact-visual .visual-phone-number{display:block;font-size:clamp(32px,5vw,46px);font-weight:900;text-decoration:none!important;color:#ff3030!important;margin:22px auto}
 .contact-visual .visual-contact-actions{display:flex;gap:12px;justify-content:center;flex-wrap:wrap;margin:18px auto}
 .contact-visual .visual-contact-actions a{display:inline-flex;align-items:center;justify-content:center;min-height:52px;padding:12px 20px;border:1px solid #168bff;border-radius:14px;text-decoration:none!important;font-weight:800;pointer-events:auto!important;position:relative;z-index:5}
 .contact-visual .visual-call-link{color:#168bff!important}
 .contact-visual .visual-wa-link{color:#ff3030!important;border-color:#ff3030!important}
-.contact-visual a:focus-visible{outline:3px solid #ff3030;outline-offset:4px}
+.contact-visual a:focus-visible,a:focus-visible{outline:3px solid #ff3030;outline-offset:4px}
+.coverage-section{display:block!important;visibility:visible!important;content-visibility:visible!important}
+.coverage-content{display:block!important;visibility:visible!important;opacity:1!important;max-width:1000px!important}
+.coverage-content ul{display:flex!important;visibility:visible!important;opacity:1!important;flex-wrap:wrap!important;justify-content:center!important;gap:10px!important;padding:0!important}
+.coverage-content li{display:block!important;visibility:visible!important;opacity:1!important;background:#050505!important;color:#168bff!important;border:1px solid #168bff!important;padding:8px 14px!important;border-radius:8px!important;font-size:15px!important;font-weight:800!important}
+@media(max-width:900px){.site-header{flex-wrap:wrap}.site-header nav{order:3;width:100%;justify-content:center;border-top:1px solid #263746;padding-top:8px}.hero{gap:25px}.service-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.warranty-band{flex-wrap:wrap}.warranty-copy{min-width:65%}.about-content{gap:25px}}
+@media(max-width:560px){.topline{font-size:10px}.site-header{padding:10px 4%}.brand-icon{width:38px;height:38px}.brand b{font-size:13px}.header-call{font-size:10px;padding:5px 8px}.header-call span{font-size:11px}.site-header nav{gap:18px;font-size:12px}.hero{grid-template-columns:1fr;padding:39px 5% 45px;gap:30px}.hero h1{font-size:32px}.hero-copy>p{font-size:14px}.hero-art{min-height:285px}.art-sticker{left:10px;right:10px;bottom:11px;padding:8px 10px}.art-sticker strong{font-size:17px}.section{padding:48px 5%}.service-grid{grid-template-columns:1fr;gap:12px}.service-card{padding:20px}.warranty-band{padding:25px 5%;gap:13px}.warranty-symbol{width:46px;height:46px;flex-basis:46px;border-radius:14px}.warranty-copy{min-width:calc(100% - 65px)}.warranty-copy h2{font-size:20px}.warranty-copy p{font-size:11px}.warranty-band .btn{margin-right:59px}.contact-strip{padding:27px 5%}.contact-strip h2{font-size:21px}.strip-number{font-size:22px}.about-content{grid-template-columns:1fr}.page-hero{padding:42px 5% 34px}.page-hero h1{font-size:31px}.contact-card{grid-template-columns:1fr}.contact-info{padding:25px}.contact-visual{min-height:260px}.contact-number a{font-size:26px}.contact-visual .visual-contact-actions a{flex:1 1 140px}footer{justify-content:center;text-align:center}.footer-brand{justify-content:center;width:100%}.footer-links{justify-content:center;width:100%}.coverage-content li{font-size:12px;padding:6px 11px}.floating-actions{left:max(12px,env(safe-area-inset-left));bottom:max(14px,env(safe-area-inset-bottom))}.price-highlight,.service-price,.price,.price-tag,.price strong{font-size:30px!important}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important;scroll-behavior:auto!important}}
