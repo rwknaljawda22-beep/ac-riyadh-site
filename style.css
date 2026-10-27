@@ -66,3 +66,28 @@ html,body,.topline,.site-header,footer,.site-footer,.hero,.page-hero,.section,.c
 .coverage-content li{display:block!important;visibility:visible!important;opacity:1!important;background:#050505!important;color:#168bff!important;border:1px solid #168bff!important;padding:8px 14px!important;border-radius:8px!important;font-size:15px!important;font-weight:800!important}
 .coverage-content .coverage-note{color:#168bff!important}
 .btn.primary,.btn.white{color:#168bff!important;background:#050505!important;border:1px solid #168bff!important}
+
+/* Make every phone number and WhatsApp action red throughout the site */
+a[href^="tel:"],
+a[href^="tel:"] *,
+.header-call,
+.header-call *,
+.strip-number,
+.strip-number *,
+.art-sticker,
+.art-sticker *,
+a[href*="wa.me"],
+a[href*="wa.me"] *,
+a[href*="whatsapp"],
+a[href*="whatsapp"] *,
+.float-wa,
+.float-wa *,
+button[aria-label*="واتساب"],
+button[aria-label*="WhatsApp"] {
+  color: #ff3030 !important;
+}
+a[href*="wa.me"],
+a[href*="whatsapp"],
+.float-wa {
+  border-color: #ff3030 !important;
+}
