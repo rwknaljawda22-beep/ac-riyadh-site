@@ -125,3 +125,14 @@ button[aria-label*="واتساب"], button[aria-label*="WhatsApp"] { color:#ff30
 .floating-actions .float-wa { color:#ff3030 !important; border-color:#ff3030 !important; }
 .floating-actions .float-wa::before, .floating-actions .float-wa::after { color:#ff3030 !important; }
 .contact-buttons a, .contact-number a, .header-call, .hero-actions a, .art-sticker, .strip-number { position:relative; z-index:2; pointer-events:auto; cursor:pointer; touch-action:manipulation; }
+
+
+/* Contact page readability and working visual contact actions */
+.contact-note{font-size:clamp(18px,2.2vw,23px)!important;line-height:1.9!important;padding:18px 20px!important;margin-top:22px!important;border-right:4px solid #168bff!important;background:#0b0b0b!important;color:#168bff!important}
+.contact-visual .phone-circle{display:flex;align-items:center;justify-content:center;text-decoration:none!important;cursor:pointer!important;pointer-events:auto!important}
+.contact-visual .visual-phone-number{display:block;font-size:clamp(32px,5vw,46px);font-weight:900;text-decoration:none!important;color:#ff3030!important;margin:22px auto}
+.contact-visual .visual-contact-actions{display:flex;gap:12px;justify-content:center;flex-wrap:wrap;margin:18px auto}
+.contact-visual .visual-contact-actions a{display:inline-flex;align-items:center;justify-content:center;min-height:52px;padding:12px 20px;border:1px solid #168bff;border-radius:14px;text-decoration:none!important;font-weight:800;pointer-events:auto!important;position:relative;z-index:5}
+.contact-visual .visual-call-link{color:#168bff!important}
+.contact-visual .visual-wa-link{color:#ff3030!important;border-color:#ff3030!important}
+.contact-visual a:focus-visible{outline:3px solid #ff3030;outline-offset:4px}
