@@ -37,3 +37,19 @@ body{background:#071321;color:#edf6ff}.topline{background:#030a12;color:#eaf5ff}
 .warranty-band{background:linear-gradient(115deg,#071321,#12395b);border-top:1px solid #254763;border-bottom:1px solid #254763}.contact-strip{background:#10243a;color:#f5f9ff}.contact-strip h2{color:#f5f9ff}footer,.site-footer{background:#030a12;color:#c8d8e8}footer a,.site-footer a{color:#53baff}input,textarea,select{background:#0a1928;color:#fff;border-color:#35516a}
 .price-highlight,.service-price,.price,.price-tag,.price strong{display:inline-block;color:#fff;background:linear-gradient(120deg,#0878e8,#0756a8);border:1px solid #50b8ff;border-radius:12px;padding:4px 13px;font-size:1.35em;font-weight:900;line-height:1.6;box-shadow:0 5px 18px #007bff35}.price-highlight{font-size:1.55em;padding:5px 15px;margin:5px 0}
 @media(max-width:700px){.site-header{gap:10px;flex-wrap:wrap}.site-header nav{order:3;width:100%;justify-content:center;gap:18px}.hero{padding:42px 5%;gap:25px}.service-card{padding:19px 16px}.price-highlight{font-size:1.4em}}
+
+/* Strict palette: black background, blue icons, red prices */
+:root{--blue:#168bff;--blue2:#168bff;--ice:#102b43;--gold:#168bff;--line:#263746;--navy:#f2f5f8;--ink:#f2f5f8;--muted:#c7d0d9}
+html,body,.topline,.site-header,footer,.site-footer,.hero,.page-hero,.section,.contact-section,.contact-strip,.service-card,.contact-info,.about-content,.coverage-content,.faq-item,.price-card,.feature-card{background:#050505!important;color:#f2f5f8!important}
+.site-header{border-bottom:1px solid #202a34;box-shadow:none!important}
+.brand,.brand b,.hero h1,.page-hero h1,.section-heading h2,.warranty-copy h2,.contact-strip h2,.about-content h2,.contact-info h2,.service-card h3{color:#f2f5f8!important}
+.brand small,.eyebrow,.site-header nav a:hover,.site-header nav a.current,.header-call span,.service-icon,.service-card>a,footer a,.site-footer a{color:#168bff!important}
+.hero-art,.page-art,.warranty-band,.contact-visual{background:#050505!important;border:1px solid #168bff}
+.service-card,.contact-card,.about-points>div{border-color:#263746!important;box-shadow:none!important}
+.service-icon{background:#0b1c2a!important;color:#168bff!important}
+.service-card p,.hero-copy>p,.page-hero p,.section-heading p,.about-content p,.contact-info>p,.contact-strip p,.warranty-copy p{color:#c7d0d9!important}
+.btn.primary{background:#168bff!important;color:#fff!important}.btn.secondary{background:#050505!important;border:1px solid #168bff!important;color:#f2f5f8!important}
+.float-call,.float-wa{background:#168bff!important}
+.price-highlight,.service-price,.price,.price-tag,.price strong{display:block;width:max-content;max-width:100%;color:#ff3030!important;background:transparent!important;border:0!important;border-radius:0!important;padding:0!important;margin:0 auto 12px!important;font-size:clamp(28px,3.4vw,38px)!important;font-weight:900!important;line-height:1.25!important;box-shadow:none!important;text-align:center}
+.service-card h3{text-align:center}
+@media(max-width:560px){.price-highlight,.service-price,.price,.price-tag,.price strong{font-size:30px!important}}
