@@ -97,3 +97,31 @@ a[href*="whatsapp"],
 .floating-actions .float-wa::after {
   color: #ff3030 !important;
 }
+
+
+/* FINAL CONSISTENT OVERRIDES — black background, blue text, red prices and experience */
+html, body { background:#050505 !important; color:#168bff !important; }
+body * { color:#168bff !important; }
+html, body, .topline, .site-header, footer, .site-footer, .hero, .page-hero, .section,
+.contact-section, .contact-strip, .service-card, .contact-info, .about-content,
+.coverage-content, .faq-item, .price-card, .feature-card, .contact-visual,
+.hero-art, .page-art, .warranty-band { background-color:#050505 !important; }
+.brand, .brand b, .hero h1, .page-hero h1, .section-heading h2, .contact-strip h2,
+.about-content h2, .contact-info h2, .service-card h3, .warranty-copy h2 { color:#168bff !important; }
+.service-price-label, .price-highlight, .service-price, .price, .price-tag,
+.price strong, .price-highlight *, .service-price * { color:#ff3030 !important; }
+.warranty-copy > span, .warranty-copy h2 { color:#ff3030 !important; }
+a[href^="tel:"], a[href^="tel:"] *, .header-call, .header-call *,
+.strip-number, .strip-number *, .art-sticker, .art-sticker *,
+a[href*="wa.me"], a[href*="wa.me"] *, a[href*="whatsapp"],
+a[href*="whatsapp"] *, .float-wa, .float-wa::before, .float-wa::after,
+button[aria-label*="واتساب"], button[aria-label*="WhatsApp"] { color:#ff3030 !important; }
+.btn.primary, .btn.white { background:#050505 !important; color:#168bff !important; border:1px solid #168bff !important; }
+.btn.whatsapp { background:#050505 !important; color:#ff3030 !important; border:1px solid #ff3030 !important; }
+.floating-actions { z-index:99999 !important; pointer-events:none !important; }
+.floating-actions a { position:relative !important; z-index:100000 !important; pointer-events:auto !important; cursor:pointer !important; touch-action:manipulation !important; }
+.floating-actions .float-call, .floating-actions .float-wa { min-width:58px !important; min-height:58px !important; display:flex !important; align-items:center !important; justify-content:center !important; border:2px solid #168bff !important; background:#050505 !important; box-shadow:0 4px 16px #0009 !important; }
+.floating-actions .float-call { font-size:26px !important; color:#168bff !important; }
+.floating-actions .float-wa { color:#ff3030 !important; border-color:#ff3030 !important; }
+.floating-actions .float-wa::before, .floating-actions .float-wa::after { color:#ff3030 !important; }
+.contact-buttons a, .contact-number a, .header-call, .hero-actions a, .art-sticker, .strip-number { position:relative; z-index:2; pointer-events:auto; cursor:pointer; touch-action:manipulation; }
