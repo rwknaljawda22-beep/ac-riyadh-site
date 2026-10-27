@@ -53,3 +53,16 @@ html,body,.topline,.site-header,footer,.site-footer,.hero,.page-hero,.section,.c
 .price-highlight,.service-price,.price,.price-tag,.price strong{display:block;width:max-content;max-width:100%;color:#ff3030!important;background:transparent!important;border:0!important;border-radius:0!important;padding:0!important;margin:0 auto 12px!important;font-size:clamp(28px,3.4vw,38px)!important;font-weight:900!important;line-height:1.25!important;box-shadow:none!important;text-align:center}
 .service-card h3{text-align:center}
 @media(max-width:560px){.price-highlight,.service-price,.price,.price-tag,.price strong{font-size:30px!important}}
+
+/* Requested final palette: all lettering blue, prices red, black background; make neighborhoods clearly visible */
+html,body,body *{color:#168bff!important}
+html,body,.topline,.site-header,footer,.site-footer,.hero,.page-hero,.section,.contact-section,.contact-strip,.service-card,.contact-info,.about-content,.coverage-content,.faq-item,.price-card,.feature-card{background-color:#050505!important}
+.service-price-label,.price-highlight,.service-price,.price,.price-tag,.price strong,.price-highlight *,.service-price *{color:#ff3030!important}
+.service-price-label{display:block;text-align:center;font-size:clamp(28px,3.5vw,38px);font-weight:900;line-height:1.25;margin:5px auto 10px}
+.service-card h3{color:#168bff!important}
+.coverage-section{display:block!important;visibility:visible!important;content-visibility:visible!important;background:#050505!important}
+.coverage-content{display:block!important;visibility:visible!important;opacity:1!important;max-width:1000px!important}
+.coverage-content ul{display:flex!important;visibility:visible!important;opacity:1!important;flex-wrap:wrap!important;justify-content:center!important;gap:10px!important;padding:0!important}
+.coverage-content li{display:block!important;visibility:visible!important;opacity:1!important;background:#050505!important;color:#168bff!important;border:1px solid #168bff!important;padding:8px 14px!important;border-radius:8px!important;font-size:15px!important;font-weight:800!important}
+.coverage-content .coverage-note{color:#168bff!important}
+.btn.primary,.btn.white{color:#168bff!important;background:#050505!important;border:1px solid #168bff!important}
